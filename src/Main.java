@@ -6,6 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("\n############################### START ###############################\n");
+
         Integer[] luckyNumbers = { 25, 7, 1992, 2, 5, 1, 9 };
 
         System.out.println("Array de inteiros original: " + Arrays.asList(luckyNumbers));
@@ -36,6 +38,23 @@ public class Main {
         });
 
         System.out.println("Lista de strings ordenada gerada: " + catBreedsList);
+
+        Double[] realNumbers = { 2.25, 7.33, 9.66, 3.99, 8.57, 3.0, 19.92 };
+
+        System.out.println("Array de doubles original: " + Arrays.asList(realNumbers));
+
+        List<Double> realNumbersList = MyOwnLists.asListedSorted(realNumbers, new Comparator<Double>() {
+
+            @Override
+            public int compare(Double o1, Double o2) {
+                return o1.compareTo(o2);
+            }
+
+        });
+
+        System.out.println("Lista de doubles ordenada gerada: " + realNumbersList);
+
+        System.out.println("\n################################ END ################################\n");
 
     }
 
