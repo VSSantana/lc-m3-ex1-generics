@@ -54,14 +54,14 @@ public class Main {
 
         System.out.println("Lista de doubles ordenada gerada: " + realNumbersList);
 
-        Cats[] gatitos = { new Cats("Brithsh Short Hair"), new Cats("Bengal"), new Cats("Savanna") };
+        Cat[] gatitos = { new Cat("Brithsh Short Hair"), new Cat("Bengal"), new Cat("Savanna") };
 
         System.out.println("Array de gatos original: " + Arrays.asList(gatitos));
 
-        List<Cats> gatitosList = MyOwnLists.asListedSorted(gatitos, new Comparator<Cats>() {
+        List<Cat> gatitosList = MyOwnLists.asListedSorted(gatitos, new Comparator<Cat>() {
 
             @Override
-            public int compare(Cats o1, Cats o2) {
+            public int compare(Cat o1, Cat o2) {
                 return o1.getRace().compareTo(o2.getRace());
             }
 

@@ -1,8 +1,8 @@
-﻿public class Cats {
+﻿public class Cat {
 
     private String race;
 
-    public Cats(String race) {
+    public Cat(String race) {
         this.race = race;
     }
 
